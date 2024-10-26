@@ -1,54 +1,68 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beranda</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <title>Beranda Toko Yulia</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Styling Header Image */
+        .header-image {
+            background-image: url('path/to/your/image.png'); /* Ganti dengan path gambar Anda */
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0;
+            color: #ffffff;
+            text-align: center;
+        }
+        /* Styling Navbar */
+        .navbar-custom {
+            background-color: #004AAD;
+        }
+        .navbar-custom .navbar-brand {
+            color: #ffffff;
+            font-size: 2rem; /* Memperbesar tulisan "Toko Yulia" */
+            font-weight: bold;
+        }
+        /* Styling Buttons */
+        .button-container {
+            margin-top: 20px;
+        }
+        .btn-custom {
+            background-color: #004AAD;
+            color: #ffffff;
+            width: 150px; /* Memperbesar lebar tombol */
+            height: 50px; /* Memperbesar tinggi tombol */
+            font-size: 1.2rem; /* Memperbesar ukuran teks pada tombol */
+            margin: 10px;
+            border-radius: 8px;
+        }
+        .btn-custom:hover {
+            background-color: #004AAD;
+        }
+    </style>
 </head>
 <body>
+
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Logo</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Cek Barang</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Kategori</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Agen</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Transaksi Pembelian</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Laporan Karyawan</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Tambah Karyawan</a>
-                    </li>
-                </ul>
-                <div class="d-flex align-items-center">
-                    <a href="#" class="btn btn-outline-primary me-2">Login</a>
-                    <img src="https://via.placeholder.com/30" class="rounded-circle" alt="Profile">
-                </div>
-            </div>
-        </div>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <a class="navbar-brand mx-auto" href="#">Toko Yulia</a>
     </nav>
 
-    <!-- Main Content -->
-    <div class="container text-center mt-5">
-        <h1>Selamat Datang!</h1>
+    <!-- Header Section -->
+    <div class="header-image">
+        <h1>Selamat Datang di Toko Yulia</h1>
+        <p>Tempat terbaik untuk kebutuhan Anda</p>
+        <div class="button-container">
+            <button type="button" class="btn btn-custom">Pemilik</button>
+            <button type="button" class="btn btn-custom">Admin</button>
+            <button type="button" class="btn btn-custom">Karyawan</button>
+        </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+
