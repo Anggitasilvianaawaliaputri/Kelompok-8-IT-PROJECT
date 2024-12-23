@@ -11,6 +11,20 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\AgentController;
 use App\Http\Controllers\TransactionController;
 
+Route::get('/Laporan', function() {
+    $posts = Laporan::all(); // Ambil semua data transaksi
+    return view('Laporan', ['posts' => $posts]); // Kirim data ke view
+})->name('laporan'); // Memberikan nama 'laporan' pada rute
+
+
+Route::get('/editLaporan/{post}', [LaporanController::class, 'showEditScreen'])->name('post.edit');
+Route::put('/editLaporan/{post}', [LaporanController::class, 'actuallyUpdatePost'])->name('post.update');
+
+// Route untuk menyimpan data laporan
+Route::post('/create-post-laporan', [LaporanController::class, 'createPost'])->name('post.create'); 
+
+// Route untuk menghapus laporan
+Route::delete('/deleteLaporan/{post}', [LaporanController::class, 'destroy'])->name('post.destroy');
 
 // Rute untuk memeriksa kolom di tabel accounts
 Route::get('/check-accounts', function () {
